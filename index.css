@@ -55,6 +55,7 @@ color: #3A3A3A;
 font-size: 16px;
 font-weight: 600;
 margin: 15px 0px;
+width:80%;
 }
 .btn-1{
 background-color:#E02C6D;
@@ -69,24 +70,129 @@ border: none;
     background-image: url(./images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-position: center;
-
+    background-size: contain;
 }
     /* banner section design end  */   
 /* header section design end  */    
 
 /* main section design start  */
+main{
+    width: 75%;
+    margin: 0 auto;
+ }
     /* sponsor section design start  */
-    
+     .sponsor-image{
+         display: flex;
+         justify-content: space-around;
+         margin: 60px 0px;
+     }
+
     /* sponsor section design end  */
 
     /* clection section design start  */
+    .product-heading{
+        text-align: center;
+        color: #3A3A3A;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 50px
+    }
+    .collection{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+    }
+    .card-details{
+        border-radius: 5px;
+        background-color: #FFF;
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+        padding: 15px;
+    }
+    .coll-title{
+        color: #18191F;
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .price{
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 10px 0px;
+    }
+    .review{
+        display: flex;
+        gap: 10px;
+    }
+    .star i{
+        color: #FB8200;
+        font-size: 12px;
+    }
+    .coll-info{
+        color: #787885e8;
+        font-size: 14px;
+        font-weight: 700;
+    }
     /* clection section design end  */
 
-    /* eatured section design start  */
-    /* eatured section design start */
+    /* featured section design start  */
+    .featured{
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        margin-top: 60px ;
+    }
+    .featured-details{
+        width: 70%;
+    }
+    .featured-title{
+        color: #0A0826;
+        font-size: 38px;
+        font-weight: 700;
+    }
+    .featured-info{
+        width: 80%;
+        margin: 12px 0px;
+        color: #6C6C6C;;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 28px; /* 175% */
+    }
+    .btn-2{
+       border-radius: 0px;
+    }
+    /* featured section design start */
 /* main section design end  */
 
 /* footer section design start  */
+footer{
+    background-color: #0A0826;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    margin-top: 100px;
+}
+.footer-details{
+    text-align: center;
+}
+
+.footer-details h3{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer-details p{
+color:  #D9DBE1;
+font-size: 14px;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+margin: 15px 0px;
+}
+.footer-details img{
+    width: 40px;
+    padding: 0px 10px;
+}
 /* footer section design end  */
 
 
@@ -109,17 +215,78 @@ border: none;
     }
 
     /* banner section*/
-    .banner-section{
+     .banner-section{
         flex-direction: column-reverse;
     }
     .banner-details{
         width: 90%;
-        margin-top: 40px;
+        margin: 40px 0px;
+        text-align: center;
     }
     .banner-title{
-    font-size: 30px;
-    line-height: 40px; /* 134.615% */
+    font-size: 28px;
+    line-height: 30px; /* 134.615% */
     }
- 
+    .banner-info{
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+
     /* sponsor design */
+    main{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .sponsor-image{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin: 5px 0px;
+        column-gap: 20px;
+        row-gap: 10px;
+    }
+    .sponsor-image img{
+        width: 100%;
+    
+    }
+
+    /* collection  */
+      .collection{
+        grid-template-columns: repeat(1,1fr);
+      }
+      .product-heading{
+        font-size: 16px;
+        margin: 20px 0px;
+      }
+
+      /* featured section */
+      .featured{
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-bottom: 0px;
+    
+      }
+      .featured-details{
+        width: 100%;
+    }
+    .featured-title{
+        color: #0A0826;
+        font-size: 30px;
+    }
+    .featured-info{
+        width: 100%;
+    }
+    .btn-2{
+        margin-bottom: 20px;
+    }
+    footer{
+        margin-top: 50px;
+    } 
+  
+    .footer-details img{
+        width: 30px;
+        padding: 0px 5px;
+    }
+    /* footer section design end  */
 }
