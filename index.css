@@ -81,10 +81,14 @@ main{
     margin: 0 auto;
  }
     /* sponsor section design start  */
-     .sponsor-image{
+    .sponsor-image{
+        margin: 20px 0px;
+    }
+    .sponsor-image{
+         text-align: center;
          display: flex;
-         justify-content: space-around;
-         margin: 60px 0px;
+         justify-content: center;
+         gap: 50px;
      }
 
     /* sponsor section design end  */
@@ -220,7 +224,7 @@ margin: 15px 0px;
     }
     .banner-details{
         width: 90%;
-        margin: 40px 0px;
+        margin: 18px 0px;
         text-align: center;
     }
     .banner-title{
@@ -233,22 +237,18 @@ margin: 15px 0px;
         font-weight: 500;
     }
 
-
     /* sponsor design */
     main{
         width: 90%;
         margin: 0 auto;
     }
-    .sponsor-image{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        margin: 5px 0px;
-        column-gap: 20px;
-        row-gap: 10px;
+   .sponsor-image{
+        flex-wrap: wrap;
+        gap: 16px;
     }
-    .sponsor-image img{
-        width: 100%;
-    
+   .sponsor-image img{
+        width: 60px;
+
     }
 
     /* collection  */
